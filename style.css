@@ -1,0 +1,989 @@
+	body
+		{
+
+		}
+		::selection
+			{
+				color:#ff3333;
+			}
+/*-----------------------AddingNewfont-----------------------*/
+@font-face 
+		{
+			font-family: "quicksand";
+			src: url("Quicksand-VariableFont_wght.ttf");
+		}
+/*-----------Animations----------------------------*/
+@keyframes opac
+{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+/*-------------Rulers on the website---------------------*/
+#rulerleft,#rulerright{width:20%;height:2px;float:left;position:relative;}
+#rulercenter
+		{
+			margin-top:50px;
+			margin-bottom:50px;
+			position:relative;
+			float:left;
+			width:55%;
+			border:1px solid #ffd699;
+			border-radius:50px;
+		}
+#ruler{width:100%;height:auto;position:relative;float:left;}
+
+/*-------------------------------------headerstyle----------*/
+	
+
+	#allmenu
+		{
+			position:sticky;
+			height:80px;
+
+			
+		}
+	#headerlogoleft a
+		{
+			float:left;
+			width:40%;
+			padding-left:25px;
+			font-family:quicksand;
+			font-size:50px;
+			color:#ff9900;
+			margin-top:5px;
+			font-weight: 200;
+			cursor:pointer;
+			text-decoration:none;
+			position:relative;
+		}
+	#headerlinksright
+		{
+			float:right;
+			width:55%;
+			margin-top:25px;
+			position:relative;
+		}
+	#toplink a
+		{
+			float:left;
+			margin-left:20px;
+			margin-top:5px;
+			font-family:serif;
+			font-size:18px;
+			color: #ff9900;
+			font-family:quicksand;
+			text-decoration:none;
+			position:relative;
+
+		}
+			#toplink a:hover
+		{
+			font-weight: 600;
+			color:#ff3333;
+
+		}
+	a #signuplink
+		{
+			float:right;
+			margin-right:35px;
+			border:none;
+			width:100px;
+			height:30px;
+			background-color: #ff3333;
+			border-radius: 5px;
+			text-align:center;
+			font-family:quicksand;
+			color:white;
+			font-weight: 600;
+			font-size:15px;
+			text-decoration:none;
+			cursor:pointer;
+			outline:none;
+			position:relative;
+		}
+		a #signuplink:hover
+		{
+			color:#ff3333;
+			border:2px solid #ff3333;
+			background-color: inherit;
+		}
+/*-----------------------homestyle------------------------*/
+		#homecenter
+			{
+				padding-top:10px;
+				width:100%;
+				height:auto;
+				position:relative;
+			}
+		#homemain1
+			{
+				
+				font-family:ubuntu;
+				font-size:70px;
+                width:90%;
+				font-weight: 600;
+				position: absolute;
+				top:20%;
+				left:50%;
+				transform: translate(-50%, -50%);
+				text-align:center;
+                letter-spacing: 5px;
+				color:white;
+				
+			}
+		#homemain2
+			{
+				
+				font-family:quicksand;
+				font-size:30px;
+				font-weight: 200;
+				position: absolute;
+				top:60%;
+				left:50%;
+				transform: translate(-50%, -50%);
+				text-align:center;
+                letter-spacing: 3px;
+                width:90%;
+				color:white;
+				
+			}
+		#homebutton 
+			{
+				
+				font-family:quicksand;
+				font-size:20px;
+				font-weight: 600;
+				position: absolute;
+				top:88%;
+				left:50.3%;
+				transform: translate(-50%, -50%);
+				text-align:center;
+				color:#ff3333;
+				width:150px;
+				height:40px;
+				border:none;
+				border-radius:50px;
+				background-color:white;
+				text-decoration:none;
+			    outline:none;				
+				
+			}
+		#homebutton:hover
+			{
+				background-color:inherit;
+				color:white;
+				border:2px solid white;
+				cursor:pointer;
+			}
+	#homeimg
+		{
+			background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8),rgba(0,0, 0, 0.5)),url('home.jpg');
+			width:100%;
+			height:600px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+		}
+#leftslide
+{
+    border:3px solid white;
+    background-color:inherit;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    padding:10px;
+    text-align:center;
+    left:10%;
+    top:80%;
+    position:absolute;
+    z-index:1;
+    opacity:0.2;
+}
+#rightslide
+{
+    border:3px solid white;
+    background-color:inherit;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    padding:10px;
+    text-align:center;
+    left:80%;
+    top:80%;
+    position:absolute;
+    z-index:1;
+    opacity:0.2;
+}
+#rightslide:hover,#leftslide:hover
+{
+    opacity:0.8;
+}
+#dot1,#dot2,#dot3
+{
+    display:inline-block;
+    width:20px;
+    height:5px;
+   left:50%;
+    border:none;
+    background-color:aliceblue;
+    position: absolute;
+    top:95%;
+    border-radius: 10px;
+    outline:none;
+    opacity:0.5;
+    cursor:pointer;
+    z-index: 1;
+}
+#dot1
+{
+    margin-left:30px;
+}
+#dot3
+{
+    margin-left:-30px;
+    opacity:1;
+}
+/*-------Responsive for home image and reviews-----------------------*/	
+@media screen and (max-width:700px)
+{
+    #homemain1{font-size:40px;}
+    #homemain2{font-size:18px;}
+    #homeimg{background-position: center;}
+}
+
+/*-----------------------aboutstyle------------------------*/
+	#allabout
+		{
+			position: relative;
+			display:block;
+
+		}
+	#aboutmenu
+		{
+			padding-left:80px;
+			color:#404040;
+			font-size:20px;
+			font-family:quicksand;
+			height:50px;
+			width:60%;
+			font-weight:600;
+			float:left;
+			margin-top:10px;
+			position:relative;
+
+
+		}
+	#aboutleft
+		{
+			width:40%;
+			float:left;
+			margin-left:120px;
+			height:auto;
+			display:block;
+			position:relative;
+			
+		}
+	#aboutright
+		{
+			width:45%;
+			float:left;
+			height:auto;
+			margin-right: 20px;
+			display:block;
+			position:relative;
+
+
+		}
+		#aboutright img
+		{
+			width:100%;
+			float:right;
+			height:auto;
+			border:none;
+			margin-right:0px;
+			position:relative;
+
+
+		}
+
+	#abouttitle
+		{
+				font-family:quicksand;
+				font-size:40px;
+				font-weight: 200;
+				text-align:left;
+				color:#ff3333;
+				position:relative;
+
+		}
+	#aboutcontent
+		{
+				font-family:quicksand;
+				font-size:30px;
+				font-weight: 200;
+				text-align:left;
+				color: #ff9900;
+				width:80%;
+				position:relative;
+		}
+	a #aboutbutton
+			{
+				
+				width:180px;
+				margin-top:50px;
+				height:40px;
+				border:none;
+				border-radius:50px;
+				background-color: #ff3333;
+				color:white;
+				text-decoration:none;
+				font-family:quicksand;
+				font-weight: 600;
+				cursor:pointer;
+				outline:none;
+
+			}
+		a #aboutbutton:hover
+			{
+				background-color:inherit;
+				color:#ff3333;
+				border:2px solid  #ff3333;
+				cursor:pointer;
+			}
+/*-----------------------featurestyle------------------------*/
+
+	#allfeatures{width:100%;position:relative;height:auto;}
+	#featuresmenu
+		{
+			color:#404040;
+			font-size:20px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:600;
+			float:left;
+			margin-top:10px;
+			text-align: center;
+			position: relative;
+
+
+		}
+	#featureshead
+		{
+			color:#ff3333;
+			font-size:60px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: center;
+			float:left;
+			position: relative;
+
+		}
+	#featuresleft
+		{
+			width:9%;
+			float:left;
+			height:2px;
+			position:relative;
+			text-align:center;
+			margin-top:20px;
+			
+		}
+	#featurescenter
+		{
+			width:23%;
+			float:left;
+			height:auto;
+			position:relative;
+			text-align:center;
+			margin-top:20px;
+			padding-left:20px;
+			padding-right:20px;
+			display:block;
+		}
+	#featuresright
+		{
+			width:9%;
+			float:left;
+			height:2px;
+			position:relative;
+			text-align:center;
+			margin-top:20px;
+
+		}
+	#featuresicon
+		{
+			font-size: 100px;
+			color:#ff3333;
+			padding-top:50px;
+		}
+	#featuresicon:hover
+		{
+			color:#ffb84d;
+			padding-top:50px;
+		}
+	#featuresheading
+		{
+			font-size: 30px;
+			font-family:quicksand;
+			color:#ff9900;
+			padding-top:10px;
+			display:block;
+			font-weight: 600;
+		}
+	#featurescontent
+		{
+			font-size: 16px;
+			font-family:quicksand;
+			color:#ff9900;
+			display:block;
+		}
+/*-----------------------features2style------------------------*/
+	#featuresleft2
+		{
+			width:35%;
+			height:auto;
+			float:left;
+			padding-right:10px;
+			position:relative;
+		}
+	#featuresleft2img
+		{
+			width:100%;
+			height:auto;
+			float:left;
+			padding-left:15px;
+		}
+	#featuresright2
+		{
+			width:60%;
+			height:330px;
+			float:left;
+			padding-left:30px;
+			padding-top:20px;
+			display:block;
+			position:relative;
+		}
+	#featuresheading2
+		{
+			color:#ff3333;
+			font-size:50px;
+			font-family:quicksand;
+			font-weight:200;
+			margin-top:10px;
+			display:block;
+			width:90%;
+			position:relative;
+		}
+	#featuressubheading1
+		{
+			color:#ff9900;
+			font-size:20px;
+			font-family:quicksand;
+			font-weight:600;
+			margin-top:10px;
+			display:block;
+			position:relative;
+		}
+	#featuressubheading2
+		{
+			color:#ff9900;
+			font-size:20px;
+			font-family:quicksand;
+			font-weight:200;
+			margin-top:10px;
+			display:block;
+			position:relative;
+		}
+/*-----------------------Dashboardstyle------------------------*/
+	#dashboardmenu
+		{
+			color:#404040;
+			font-size:20px;
+			font-family:quicksand;
+			height:50px;
+			width:100%;
+			font-weight:600;
+			float:left;
+			padding-top:80px;
+			text-align: center;
+			position:relative;
+		}
+	#dashboardall
+		{
+			width:100%;
+			height:auto;
+			float:left;
+			position:relative;
+			text-align:center;
+			background-color: rgba(255, 179, 179, 0.2);
+		}
+	#dashboardheading
+		{
+			color:#ff3333;
+			font-size:40px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: center;
+			float:left;
+			position:relative;
+		}
+	#dashboardcontentleft
+		{
+			width:20%;
+			height:20px;
+			float:left;
+			position:relative;
+		}
+	#dashboardcontent
+		{
+			color:#660000;
+			font-size:20px;
+			font-family:quicksand;
+			height:auto;
+			width:55%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: center;
+			float:left;
+			position:relative;
+			padding-bottom:50px;
+		}
+	#dashboardcontentright
+		{
+			width:20%;
+			height:20px;
+			float:left;
+			position:relative;
+		}
+/*-----------------------Reviewsstyling------------------------*/
+	#reviewsmenu
+		{
+			color:#404040;
+			font-size:20px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:600;
+			float:left;
+			padding-top:80px;
+			text-align: center;
+			position:relative;
+		}
+	#reviewsheading
+		{
+			color:#ff3333;
+			font-size:50px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: center;
+			float:left;
+			position:relative;
+		}
+	#reviewsleft
+		{
+			width:6%;
+			height:20px;
+			float:left;
+			position:relative;
+		}
+	#reviewscenter
+		{
+			width:20%;
+			height:auto;
+			float:left;
+			position:relative;
+			text-align:center;
+			padding:30px;
+			margin-left:30px;
+			border-radius:8px;
+			box-shadow:0px 5px 5px #ffebcc;
+			display:block;
+		}
+	#reviewsright
+		{
+			width:10%;
+			height:2px;
+			float:left;
+			position:relative;
+			background-color:none;
+		}
+	#rcontent
+		{
+			color:#ff9900;
+			font-size:20px;
+			font-family:quicksand;
+			height:50px;
+			width:55%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: center;
+
+
+		}
+	#rdp
+		{
+			margin-top:100px;
+			margin-bottom:20px;
+		}
+	#rdp img
+		{
+			width:80px;
+			border-radius:80px;
+			box-shadow: 0px 3px 10px grey;
+
+		}
+	#rname
+		{
+			color:#ff3333;
+			font-size:20px;
+			font-family:quicksand;
+			height:50px;
+			width:55%;
+			font-weight:600;
+		}
+	#rdesignation
+		{
+			color:#ff3333;
+			font-size:15px;
+			font-family:quicksand;
+			height:50px;
+			width:55%;
+			font-weight:200;
+		}
+/*----------------------------notestyling------------------*/
+	#note
+		{
+			width:100%;
+			height:auto;
+			background-image: linear-gradient(to left,#ff9900,#ff3333);
+			float:left;
+			margin-top:50px;
+			padding-bottom: 50px;
+		}
+	#noteleft
+		{
+			width:80%;
+			float:left;
+			margin-top:50px;
+			font-size:40px;
+			color:white;
+			text-align:center;
+			font-family:quicksand;
+			font-weight: 100;
+		}
+	#noteright
+		{
+			width:20%;
+			float:left;
+			padding-top:60px;
+
+		}
+		a #notebutton 
+			{
+				
+				font-family:quicksand;
+				font-size:20px;
+				font-weight: 600;
+				text-align:center;
+				color:#ff3333;
+				width:180px;
+				height:40px;
+				border:none;
+				border-radius:50px;
+				background-color:white;
+				text-decoration:none;
+				outline:none;
+				
+			}
+		a #notebutton:hover
+			{
+				background-color:inherit;
+				color:white;
+				border:2px solid white;
+				cursor:pointer;
+			}
+/*-------------------formstyling--------------------*/
+	#formimg
+		{
+			background-image:linear-gradient(rgba(0,0,0, 0.8),rgba(0,0,0, 0.8)),url('te.jpg');
+			width:100%;
+			height:auto;
+			background-position: center;
+			background-size: 1500px;
+			position:relative;
+			float:left;
+		}
+	#formleft
+		{
+			width:20%;
+			height:300px;
+
+			float:left;
+			position:relative;
+		}
+	#formcenter
+		{
+			width:32%;
+			height:auto;
+			float:left;
+			position:relative;
+			display:block;
+			margin-top:20px;
+			padding-bottom:20px;
+		}
+	#formright
+		{
+			width:10%;
+			height:300px;
+
+			float:left;
+			position:relative;
+		}
+	#formmenu
+		{
+			color:white;
+			font-size:20px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:600;
+			float:left;
+			padding-top:50px;
+			text-align: left;
+		}
+	#formheading
+		{
+			color:white;
+			font-size:40px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:200;
+			margin-top:10px;
+			text-align: left;
+			float:left;
+		}
+	#formcontent
+		{
+			color:white;
+			font-size:20px;
+			font-family:quicksand;
+			height:auto;
+			width:100%;
+			font-weight:200;
+			margin-top:50px;
+			text-align: left;
+			float:left;
+		}
+	#fname
+		{
+				margin-top:10px;
+				width:80%;
+				height:40px;
+				border:none;
+				border-radius:5px;
+				outline:none;
+				background-color:grey;
+				opacity:0.7;
+		}
+	#fmail
+		{
+				margin-top:10px;
+				width:80%;
+				height:40px;
+				border:none;
+				border-radius:5px;
+				outline:none;
+				background-color:grey;
+				opacity:0.7;
+		}
+	#fmessage
+		{
+				margin-top:10px;
+				width:80%;
+				height:110px;
+				border:none;
+				border-radius:5px;
+				outline:none;
+				background-color:grey;
+				opacity:0.7;
+				padding-top:10px;
+		}
+		a #fbutton 
+			{
+				
+				font-family:quicksand;
+				font-size:20px;
+				font-weight: 600;
+				text-align:center;
+				color:white;
+				width:80%;
+				height:40px;
+				border:none;
+				border-radius:5px;
+				background-image:linear-gradient(to left,#ff9900,#ff3333);
+				text-decoration:none;
+				margin-top:10px;
+				outline:0;
+				
+			}
+		a #fbutton:hover
+			{
+				background-image:inherit;
+				background-color:inherit;
+				color:white;
+				border:2px solid white;
+				cursor:pointer;
+			}
+		::placeholder
+			{
+				color:white;
+				font-family:quicksand;
+				font-size:18px;
+				font-weight:400;
+				padding-left:10px;
+			}
+		textarea:focus, input:focus
+			{
+    			color: white;
+    			font-family:quicksand;
+				font-size:20px;
+				font-weight:400;
+				padding-left:10px;
+
+			}
+		textarea:onblur, input:onblur 
+			{
+    			color: white;
+    			font-family:quicksand;
+				font-size:20px;
+				font-weight:400;
+				padding-left:10px;
+
+			}
+/*-------------------Footerstyling------------------------*/
+			.sicon
+				{
+					float:left;
+					margin:10px;
+				}
+			.allicons
+				{
+				position:relative ;
+				text-align:center;
+				float:left;
+				width:45%;
+
+				}
+			.sicon a i:hover
+				{
+					color:#269900;
+				}
+	#footerlogoleft a
+		{
+			float:left;
+			width:15%;
+			
+			font-family:quicksand;
+			font-size:30px;
+			color:#ff9900;
+			margin-top:0px;
+			font-weight: 200;
+			cursor:pointer;
+			text-decoration:none;
+		}
+	#footerlinksright
+		{
+			float:right;
+			width:25%;
+			margin-top:10px;
+		}
+	#bottomlink a
+		{
+			float:left;
+			margin-left:10px;
+			margin-top:5px;
+			font-family:serif;
+			font-size:15px;
+			color:#ff1a1a;
+			font-family:quicksand;
+			text-decoration:none;
+
+		}
+			#bottomlink a:hover
+		{
+			font-weight: 600;
+			color:#ff9900;
+
+		}
+/*----------------------------------responsivepage for 800px,------------------------*/
+@media screen and (max-width:1000px)
+	{
+
+		#signuplink{display:none;width:100%;}
+
+		#allabout,#abouttitle,#aboutcontent,#aboutleft,#aboutright,#allfeatures,#featuresmenu,#featuresheading2,#featuresright2,#featuressubheading1,#featuressubheading2,#featureshead,#featuresleft2,#noteright,#noteleft,#formimg{width:100%;text-align:center;padding:0px;margin:0px;height:auto;}
+		#aboutmenu{width:100%;text-align:center;padding:0px;margin:0px;margin-top:10px;}
+		a #aboutbutton{width:50%;text-align:center;padding:0px;margin:0px;margin-top:20px;}
+		#aboutright img{width:100%;padding:0px;margin:0px;text-align:center;height:auto;margin-left:0px;margin-top:20px;}
+		#featurescenter{width:100%;text-align:center;padding:0px;margin-top:20px;height:auto;}
+		#featuresleft{width:100%;height:10px;}
+		#featuresright{width:100%;height:10px;}
+		{width:100%;margin:0px;padding:0px;}
+		#dashboardimg{width:100%;height:auto;margin-top:50px;position:relative;}
+		#featuresleft2img{width:98%;height:auto;margin-top:50px;position:relative;}
+		#dashboardcontent{width:90%;height:auto;padding:20px;padding-left:20px;}
+		#note{width:100%;margin:0px;padding:0px;padding-bottom:20px;}
+
+		#formcenter,#formmenu,#formheading,#formcontent{width:100%;margin:0px;padding:0px;text-align:center;padding-top:10px;padding-bottom:10px;}
+		#formleft,#formright{width:100%;height:10px;}
+		#footerlinksright{display: none;}
+		.allicons{width:70%;text-align:center;padding:0px;margin:0px;}
+		.sicon{width:10%;text-align:center;padding:0px;margin-top:10px;}
+		#footerlogoleft{width:20%;float:left;}
+	
+		@media screen and (max-width:600px)/*when screen is below 600px-------*/
+		{
+		#reviewsmenu{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewsheading{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewscenter{width:85%;margin-top:50px;padding:20px;text-align:center;margin:0px;}
+		#reviewsleft{width:100%;height:10px;}
+		#reviewsright{width:100%;height:10px;}
+		}
+		@media screen and (min-width:601px)/*when screen is above 600px-------*/
+		{
+		#reviewsmenu{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewsheading{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewscenter{width:22%;margin-top:20px;padding:10px;text-align:center;margin:10px;}
+		#reviewsleft{width:8%;height:10px;}
+		#reviewsright{width:7%;height:10px;}
+		}
+		@media screen and (min-width:1001px)/*when screen is above 600px-------*/
+		{
+		#reviewsmenu{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewsheading{width:100%;margin-top:20px;padding:0px;text-align:center;}
+		#reviewscenter{width:22%;margin-top:20px;padding:10px;text-align:center;margin:10px;}
+		#reviewsleft{width:8%;height:10px;}
+		#reviewsright{width:7%;height:10px;}
+		}
+        @media screen and (max-width:600px)/*when screen is below 600px-------*/
+		{
+	     #headerlinksright{display:none;}
+		 #headerlogoleft a{width:100%;text-align:center;padding:0px;margin:0px;}
+		}
+		 @media screen and (min-width:601px)/*when screen is above 600px-------*/
+		{
+	     #headerlinksright{width:65%;padding:0px;text-align:center;}
+		 #headerlogoleft a{width:35%;text-align:center;padding:0px;margin:0px;}
+		}
